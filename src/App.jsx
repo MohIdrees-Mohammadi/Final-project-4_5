@@ -10,8 +10,8 @@ import Contactus from "./Pages/Contactus"
 import Signin from './Pages/Signin'
 import Signup from './Pages/Signup'
 import Error from './Pages/Error'
-
-
+import Product from './Pages/Product'
+import ProductDetails from './Pages/ProductDetails'
 
 const router = createBrowserRouter([
   {
@@ -35,6 +35,15 @@ const router = createBrowserRouter([
         path: '/contact-us',
         element: <Contactus />,
       },
+      {
+        path: '/product',
+        element: <Product />
+      },
+      {
+        path: '/product/:id',
+        element: <ProductDetails />
+      }
+
   
       
     ]
